@@ -1,0 +1,22 @@
+@layer components {
+  .prose {
+    @apply space-y-base;
+    h2 {
+      @apply text-2xl font-bold;
+    }
+    h3 {
+      @apply text-xl font-medium;
+    }
+
+    ul {
+      @apply list-outside list-disc ml-xl;
+    }
+    ol {
+      @apply list-outside list-decimal ml-xl;
+    }
+
+    a {
+      @apply underline;
+    }
+  }
+}
