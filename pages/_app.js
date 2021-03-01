@@ -5,15 +5,15 @@ import "styles/base.scss";
 import "styles/utilities.scss";
 import "styles/components.scss";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>eMT-RAC Guide</title>
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
 
-export default MyApp;
+export default App;
