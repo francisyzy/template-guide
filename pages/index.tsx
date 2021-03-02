@@ -17,7 +17,7 @@ export default function Index({ unhydratedContent, pages }) {
       <div>{hydratedContent}</div>
 
       {/* Other pages */}
-      <section className="mt-base space-y-sm">
+      <section className="mt-base grid gap-sm md:grid-cols-2 lg:grid-cols-3">
         {pages &&
           pages.map((page) => (
             <GuidePreview page={page} key={page.slug}></GuidePreview>
