@@ -3,6 +3,18 @@
     @apply text-gray-700 leading-8;
   }
   body h1, body h2, body h3 {
-    @apply text-gray-800;
+    @apply text-gray-900;
+  }
+
+  // Nicer headings
+  h1 {
+    @apply text-4xl font-black;
+    @apply mb-sm;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
   }
 }

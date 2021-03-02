@@ -11,7 +11,11 @@ function App({ Component, pageProps }) {
       <Head>
         <title>eMT-RAC Guide</title>
       </Head>
+
+      <main className="space">
+
       <Component {...pageProps} />
+      </main>
     </>
   );
 }
