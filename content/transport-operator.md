@@ -7,13 +7,13 @@ description: How to use the eMT-RAC as a transport operator
 
 On the main page, click the "<span className="text-indigo-500">New</span>" button. Fill all fields:
 
-![](/guide-test/screenshots/rac-form-1.png)
+![](/emtrac2-guide/screenshots/rac-form-1.png)
 
 ### Risks
 
 The risk will be calculated and displayed:
 
-![](/guide-test/screenshots/rac-form-4.png)
+![](/emtrac2-guide/screenshots/rac-form-4.png)
 
 ### Summary
 

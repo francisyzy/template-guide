@@ -7,7 +7,7 @@ description: Signing up and logging in
 
 To create an account, please visit [mtrac.ado.sg/signup](https://mtrac.ado.sg/signup):
 
-![](/guide-test/screenshots/signup.png)
+![](/emtrac2-guide/screenshots/signup.png)
 
 State if you are a **Transport Operator (TO), Transport Leader (TL), Dual Vocation (DV)**, or **Vehicle Commander (VC)**.
 
@@ -22,4 +22,4 @@ You are only required to enter the following fields if you are a **Transport Ope
 
 After signing up, you will be redirected to the login page ([mtrac.ado.sg/login](https://mtrac.ado.sg/login)):
 
-![](/guide-test/screenshots/login.png)
+![](/emtrac2-guide/screenshots/login.png)
