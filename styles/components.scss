@@ -1,9 +1,11 @@
 @layer components {
   .prose {
     @apply space-y-base;
+
     h2 {
       @apply text-2xl font-bold;
     }
+
     h3 {
       @apply text-xl font-medium;
     }
@@ -11,12 +13,17 @@
     ul {
       @apply list-outside list-disc ml-xl;
     }
+
     ol {
       @apply list-outside list-decimal ml-xl;
     }
 
     a {
       @apply underline;
+    }
+
+    img {
+      @apply block mx-auto border-4 rounded w-full md:w-3/4 lg:w-4/6 xl:w-1/3;
     }
   }
 }

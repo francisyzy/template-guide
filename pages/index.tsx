@@ -14,7 +14,7 @@ export default function Index({ unhydratedContent, pages }) {
     <>
       <h1 className="text-4xl text-center font-black">eMT-RAC Guide</h1>
 
-      <div>{hydratedContent}</div>
+      <div className="prose">{hydratedContent}</div>
 
       {/* Other pages */}
       <section className="mt-base grid gap-sm md:grid-cols-2 lg:grid-cols-3">
@@ -27,7 +27,7 @@ export default function Index({ unhydratedContent, pages }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { unhydratedContent } = await getMD("index");
 
   const pages = [];
