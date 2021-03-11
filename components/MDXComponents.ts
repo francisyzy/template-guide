@@ -1,3 +1,3 @@
-const MDXComponetns = {}
+const MDXComponents = {};
 
-export default MDXComponetns
+export default MDXComponents;
