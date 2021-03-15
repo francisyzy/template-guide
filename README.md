@@ -1,5 +1,3 @@
-
-
 # MT-RAC+ Guide
 
 This is a guide page/app for the main application [MT-RAC+](https://havenofexcellence.me/)
@@ -19,13 +17,13 @@ In order to edit the guide pages, you will need to know markdown. Learn markdown
   - etc.
 - [Screenshots](public/screenshots)
 
-If new pages are to be inserted, [`meta.ts`](content/meta.ts) also needs to have the page *slug* inside for it to build the new page inserted. The page slug is the file name. For example, the page slug of the **Transport Operator** page is `transport-operator`.
+If new pages are to be inserted, [`meta.ts`](content/meta.ts) also needs to have the page _slug_ inside for it to build the new page inserted. The page slug is the file name. For example, the page slug of the **Transport Operator** page is `transport-operator`.
 
 When creating new pages, do **not** use spaces in the file name. Instead of spaces, include hyphens.
 
 ### Formatting to be used
 
-Copy over an existing page's `md` document and edit from there. The content at the top is the *metadata* and will look like this:
+Copy over an existing page's `md` document and edit from there. The content at the top is the _metadata_ and will look like this:
 
 ```md
 ---
@@ -35,19 +33,21 @@ description: How to use the MT-RAC+ as a transport operator
 ```
 
 Note the the "`---`" at the top and bottom of the metadata. The two required metedata values are:
+
 1. `title`: The page's title, also shown in the tab bar
 2. `description`: The page's description, show in the preview
 3. (Optional) `auth`: Set to `true` to make the password required to view the page
 
 ## Building the site
 
-The page will automatically build after the file is saved. 
+The page will automatically build after the file is saved.
 
 You can look at the build logs from the [Actions Tab](https://github.com/HavenOfExcellence/mtrac-guide/actions)
 
 Once a green tick is shown, the site will be available at either at [MT-RAC+/mtrac-guide](havenofexcellence.me/mtrac-guide/) or [Repository Docs Page](https://havenofexcellence.github.io/mtrac-guide/) (Both serve identical content)
 
 ## Advanced development
+
 First, install dependencies:
 
 ```bash
