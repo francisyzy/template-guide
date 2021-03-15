@@ -5,8 +5,27 @@ import { getMD } from "lib/mdx";
 import MDXComponents from "components/MDXComponents";
 import BackButton from "components/BackButton";
 import { slugs } from "content/meta";
+import { useEffect, useState } from "react";
 
-const Guide = ({ title, unhydratedContent }) => {
+const Guide = ({ title, unhydratedContent, auth }) => {
+  const [showContent, setShowContent] = useState(false);
+  const [wrongPasswordEntered, setWrongPasswordEntered] = useState(false);
+
+  useEffect(() => {
+    if (auth) {
+      setShowContent(false);
+      const password = prompt("Enter the secret key:");
+      if (password === "secret") {
+        setShowContent(true);
+      } else {
+        setWrongPasswordEntered(true);
+      }
+      console.log('the password entered was', password)
+    } else {
+      setShowContent(true)
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -15,9 +34,16 @@ const Guide = ({ title, unhydratedContent }) => {
 
       <BackButton href="/"></BackButton>
       <h1 className="mt-xs">{title}</h1>
-      <div className="prose">
+
+      <div className={`prose ${!showContent && "hidden"}`}>
         {hydrate(unhydratedContent, { components: MDXComponents })}
       </div>
+      {wrongPasswordEntered && (
+        <div className="text-red-500 font-bold">
+          You entered the wrong password. Please reload the page and try again.
+          Contact your Hub Admin if you do not know the password
+        </div>
+      )}
     </>
   );
 };
@@ -27,23 +53,19 @@ export async function getStaticPaths(context) {
     paths: slugs.map((slug) => ({
       params: { slug },
     })),
-    //  [
-    //   { params: { slug: "accounts" } },
-    //   { params: { slug: "transport-operator" } },
-    // ],
     fallback: false,
   };
 }
 export async function getStaticProps(context) {
-  // const { slug } = context.query;
   const { slug } = context.params;
 
-  const { title, unhydratedContent } = await getMD(slug);
+  const { title, unhydratedContent, auth } = await getMD(slug);
 
   return {
     props: {
       title,
       unhydratedContent,
+      auth,
     },
   };
 }

@@ -1,1 +1,6 @@
-export const slugs = ["accounts", "transport-operator", "vehicle-commander"];
+export const slugs = [
+  "accounts",
+  "transport-operator",
+  "vehicle-commander",
+  "admin",
+];

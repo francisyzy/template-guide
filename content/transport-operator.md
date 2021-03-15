@@ -1,19 +1,19 @@
 ---
 title: Transport Operator Guide
-description: How to use the eMT-RAC as a transport operator
+description: How to use the MT-RAC+ as a transport operator
 ---
 
 ## Creating MT-RACs
 
 On the main page, click the "<span className="text-indigo-500">New</span>" button. Fill all fields:
 
-![](/emtrac2-guide/screenshots/rac-form-1.png)
+![](/mtrac-guide/screenshots/rac-form-1.png)
 
 ### Risks
 
 The risk will be calculated and displayed:
 
-![](/emtrac2-guide/screenshots/rac-form-4.png)
+![](/mtrac-guide/screenshots/rac-form-4.png)
 
 ### Summary
 

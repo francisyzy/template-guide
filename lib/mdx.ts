@@ -12,7 +12,7 @@ export async function getMD(filepath) {
     "utf8"
   );
   const { data, content } = matter(file);
-  const { title, description } = data;
+  const { title, description, auth } = data;
 
   return {
     title,
@@ -20,5 +20,6 @@ export async function getMD(filepath) {
     unhydratedContent: await renderToString(content, {
       components: MDXComponents,
     }),
+    auth: auth ?? null,
   };
 }

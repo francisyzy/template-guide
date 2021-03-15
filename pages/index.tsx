@@ -12,7 +12,7 @@ export default function Index({ unhydratedContent, pages }) {
 
   return (
     <>
-      <h1 className="text-4xl text-center font-black">eMT-RAC Guide</h1>
+      <h1 className="text-4xl text-center font-black">MT-RAC+ Guide</h1>
 
       <div className="prose">{hydratedContent}</div>
 

@@ -1,8 +1,53 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# MT-RAC Guide
 
-First, run the development server:
+This is a guide page/app for the main application [MT-RAC+](https://mtrac.ado.sg)
+
+It is separated out from the main project to provide easier updating of the guide page for faster build times, easier to update etc.
+
+## Things you need to know to edit this guide
+
+You need to know how to type in markdown syntax to edit the pages.
+
+Here is a guide on how to use markdown https://www.markdownguide.org/
+
+## Important files to edit the content
+
+- [Content pages](content/index.md)
+  - Specific detail pages:
+  - [Accounts](content/accounts.md)
+  - [Transport Operator](content/transport-operator.md)
+  - [Vehicle Commander](content/vehicle-commander.md)
+  - etc.
+- [Screenshots](public/screenshots)
+
+If new pages are to be inserted, [`meta.ts`](content/meta.ts) also needs to have the page title inside for it to build the new page inserted
+
+### Formatting to be used
+
+Copy over an existing page's `md` document and edit from there.
+
+It will have all the headers necessary for the page to look ok. 
+
+## Building the site
+
+The page will automatically build after the file is saved. 
+
+You can look at the build logs from the [Actions Tab](https://github.com/HavenOfExcellence/mtrac-guide/actions)
+
+Once a green tick is shown, the site will be available at either at [MT-RAC+/mtrac-guide](https://mtrac.ado.sg/mtrac-guide) or [Repository Docs Page](https://havenofexcellence.github.io/mtrac-guide/) (Both serve identical content)
+
+## Advanced development
+First, install dependencies:
+
+```bash
+npm i
+# or
+yarn install
+```
+
+Then run the development server
 
 ```bash
 npm run dev
@@ -12,12 +57,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -26,9 +65,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
