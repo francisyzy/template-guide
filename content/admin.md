@@ -6,21 +6,17 @@ auth: true
 
 ## Roles
 
-### Node Admin
+The two main roles are **Node Admin** and **Hub Admin**. Node Admins can view all users in their own node, verify their licenses, and promote users to Node Admin. Hub Admins can do everything Node Admins can, but also view users in their Hub, and promote other users to Hub Admin.
 
-Node Admins can view all users in their own node and verify their licenses. They can promote other users to Node Admin.
 
-### Hub Admin
-
-Hub Admins can do everything Node Admins can, but also view users in their Hub. They can promote other users to Hub Admin.
-
-### Super Admin
 
 ## Viewing users
 
-On the main page, click on the admin tab (only visible when you are an admin)
+On the main page, click on the admin tab:
 
-### View user
+![](/mtrac-guide/screenshots/admin-dashboard.png)
+
+### View a single user
 
 The specific user information will be displayed on your screen.
 
@@ -45,3 +41,16 @@ In the case where the user has forgotten his own password, you can use this feat
 #### Verify licence
 
 This button will give the user a verified tick that indicates his licence is verified.
+
+
+## Super Admin
+
+Super Admins can do everything Node and Hub Admins can do. They can also view a list of all users and all MT-RACS.
+
+### Feature Flags
+
+There are some configurable features which can be edited in the "Flags" page.
+
+![](/mtrac-guide/screenshots/admin-flags.png)
+
+**Be careful when changing these values!**
