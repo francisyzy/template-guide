@@ -15,7 +15,7 @@ const Guide = ({ title, unhydratedContent, auth }) => {
     if (auth) {
       setShowContent(false);
       const password = prompt("Enter the secret key:");
-      if (password === "secret") {
+      if (password === "defaultPassword") {
         setShowContent(true);
       } else {
         setWrongPasswordEntered(true);
@@ -41,7 +41,7 @@ const Guide = ({ title, unhydratedContent, auth }) => {
       {wrongPasswordEntered && (
         <div className="text-red-500 font-bold">
           You entered the wrong password. Please reload the page and try again.
-          Contact your Hub Admin if you do not know the password
+          Contact your the person in charge if you do not know the password
         </div>
       )}
     </>

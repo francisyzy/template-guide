@@ -1,10 +1,10 @@
 {
-  "name": "mtrac-guide",
+  "name": "template-guide",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o docs/ && touch docs/.nojekyll",
+    "build": "next build && next export -o dist/ && touch dist/.nojekyll",
     "start": "next start"
   },
   "dependencies": {

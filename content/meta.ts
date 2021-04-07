@@ -1,7 +1,4 @@
 export const slugs = [
-  "accounts",
-  "transport-operator",
-  "vehicle-commander",
-  "installation",
-  "admin",
+  "guide-one",
+  "guide-two",
 ];

@@ -1,12 +1,12 @@
 const webpack = require("webpack");
 
 module.exports = {
-  basePath: "/mtrac-guide",
-  assetPrefix: "/mtrac-guide/",
+  basePath: "/template-guide",
+  assetPrefix: "/template-guide/",
   // webpack: (config) => {
   //   config.plugins.push(
   //     new webpack.DefinePlugin({
-  //       "process.env.ASSET_PREFIX": JSON.stringify('mtrac-guide'),
+  //       "process.env.ASSET_PREFIX": JSON.stringify('template-guide'),
   //     })
   //   );
 
