@@ -4,11 +4,11 @@ name: CD
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push or pull request events but only for the default branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,10 +32,6 @@ jobs:
           npm run build
 
       # Deploys
-      - name: Push
+      - name: Deploy
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Build site"
-          git push
+          npm run deploy
