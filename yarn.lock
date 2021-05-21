@@ -1859,7 +1859,7 @@
     "color-convert" "^1.9.1"
     "color-string" "^1.5.4"
 
-"colorette@^1.2.1":
+"colorette@^1.2.1", "colorette@^1.2.2":
   "integrity" "sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w=="
   "resolved" "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz"
   "version" "1.2.2"
@@ -3062,10 +3062,10 @@
   "resolved" "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz"
   "version" "2.1.2"
 
-"nanoid@^3.1.16", "nanoid@^3.1.20":
-  "integrity" "sha512-a1cQNyczgKbLX9jwbS/+d7W8fX/RfgYR7lVWwWOGIPNgK2m0MWvrGF6/m4kk6U3QcFMnZf3RIhL0v2Jgh/0Uxw=="
-  "resolved" "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.20.tgz"
-  "version" "3.1.20"
+"nanoid@^3.1.16", "nanoid@^3.1.23":
+  "integrity" "sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw=="
+  "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.1.23.tgz"
+  "version" "3.1.23"
 
 "napi-build-utils@^1.0.1":
   "integrity" "sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg=="
@@ -3085,9 +3085,9 @@
   "version" "2.6.2"
 
 "next-mdx-remote@^2.1.3":
-  "integrity" "sha512-wDI1KepnqG3FDu1wQJAJGGXAoyasjzbehcIhC+felDxGEbEEG8tYOkvMttXvMs4zaXPG4NeWnx0Ev0KdF0ZX1w=="
-  "resolved" "https://registry.yarnpkg.com/next-mdx-remote/-/next-mdx-remote-2.1.3.tgz"
-  "version" "2.1.3"
+  "integrity" "sha512-HHJasFVgPGjWXW3tWC37NCvHcQUOjJgVUMdwxgVbshwgtDLrGmupNkist/iamDLlvVibU52B9rqM9VAWofq7cA=="
+  "resolved" "https://registry.npmjs.org/next-mdx-remote/-/next-mdx-remote-2.1.4.tgz"
+  "version" "2.1.4"
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/preset-env" "^7.12.11"
@@ -3483,12 +3483,12 @@
     "supports-color" "^6.1.0"
 
 "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.13", "postcss@^8.1.6", "postcss@^8.2.1", "postcss@^8.2.6":
-  "integrity" "sha512-xpB8qYxgPuly166AGlpRjUdEYtmOWx2iCwGmrv4vqZL9YPVviDVPZPRXxnXr6xPZOdxQ9lp3ZBFCRgWJ7LE3Sg=="
-  "resolved" "https://registry.yarnpkg.com/postcss/-/postcss-8.2.6.tgz"
-  "version" "8.2.6"
+  "integrity" "sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.15.tgz"
+  "version" "8.2.15"
   dependencies:
-    "colorette" "^1.2.1"
-    "nanoid" "^3.1.20"
+    "colorette" "^1.2.2"
+    "nanoid" "^3.1.23"
     "source-map" "^0.6.1"
 
 "postcss@8.1.7":
@@ -3661,7 +3661,7 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
-"react-dom@^16.6.0 || ^17", "react-dom@^16.9.0 || ^17", "react-dom@>=16.13.1 <=17.0.1", "react-dom@17.0.1":
+"react-dom@^16.6.0 || ^17", "react-dom@^16.9.0 || ^17", "react-dom@>=16.x <=17.x", "react-dom@17.0.1":
   "integrity" "sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug=="
   "resolved" "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.1.tgz"
   "version" "17.0.1"
@@ -3685,7 +3685,7 @@
   "resolved" "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react@*", "react@^16.13.1 || ^17.0.0", "react@^16.6.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.9.0 || ^17", "react@>=16.13.1 <=17.0.1", "react@15.x.x || 16.x.x || 17.x.x", "react@17.0.1":
+"react@*", "react@^16.13.1 || ^17.0.0", "react@^16.6.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.9.0 || ^17", "react@>=16.x <=17.x", "react@15.x.x || 16.x.x || 17.x.x", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
