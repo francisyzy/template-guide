@@ -28,7 +28,7 @@ jobs:
       # Builds
       - name: Build site
         run: |
-          npm ci
+          npm ci --force
           npm run build
 
       # Deploys

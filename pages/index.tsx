@@ -1,4 +1,4 @@
-import hydrate from "next-mdx-remote/hydrate";
+import { MDXRemote } from 'next-mdx-remote';
 import { getMD } from "lib/mdx";
 import { slugs } from "content/meta";
 
@@ -6,15 +6,13 @@ import MDXComponents from "components/MDXComponents";
 import GuidePreview from "components/GuidePreview";
 
 export default function Index({ unhydratedContent, pages }) {
-  const hydratedContent = hydrate(unhydratedContent, {
-    components: MDXComponents,
-  });
-
   return (
     <>
       <h1 className="text-4xl text-center font-black">TEMPLATE_TITLE Guide</h1>
 
-      <div className="prose">{hydratedContent}</div>
+      <div className="prose">
+        <MDXRemote {...unhydratedContent} components={MDXComponents} />
+      </div>
 
       {/* Other pages */}
       <section className="mt-base grid gap-sm md:grid-cols-2 lg:grid-cols-3">

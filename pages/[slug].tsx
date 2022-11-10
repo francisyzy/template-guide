@@ -1,5 +1,5 @@
 import Head from "next/head";
-import hydrate from "next-mdx-remote/hydrate";
+import { MDXRemote } from 'next-mdx-remote';
 import { getMD } from "lib/mdx";
 
 import MDXComponents from "components/MDXComponents";
@@ -36,7 +36,7 @@ const Guide = ({ title, unhydratedContent, auth }) => {
       <h1 className="mt-xs">{title}</h1>
 
       <div className={`prose ${!showContent && "hidden"}`}>
-        {hydrate(unhydratedContent, { components: MDXComponents })}
+        <MDXRemote {...unhydratedContent} components={MDXComponents} />
       </div>
       {wrongPasswordEntered && (
         <div className="text-red-500 font-bold">
